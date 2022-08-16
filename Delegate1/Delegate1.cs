@@ -4,7 +4,7 @@ namespace DelegateOne
 {
     internal class Program
     {
-        public static object? FineChic { get; private set; }
+        public static object? likelyUsername { get; private set; }
         public delegate bool Predicate(TClass t);
         static void Main(string[] args)
         {
@@ -12,7 +12,7 @@ namespace DelegateOne
             Delegate classwork = (TClass t) =>
             {
 
-                if (t.UserName == FineChic)
+                if (t.UserName == likelyUsername)
                 {
                     return true;
                 }
